@@ -1,0 +1,95 @@
+.projects-section {
+    background-color: #f3e3cb; /* Light background */
+    color: #582426; /* Dark text color */
+    padding: 4rem 0; /* Vertical padding */
+  }
+
+  .projects-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .projects-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .book {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    perspective: 1000px; /* Adds depth for 3D effect */
+  }
+  
+  .book-inner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .book-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    box-sizing: border-box;
+    transform-origin: left;
+  }
+  
+  .book-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    z-index: 1;
+  }
+  
+  .book-button.prev {
+    left: -2rem;
+  }
+  
+  .book-button.next {
+    right: -2rem;
+  }
+  
+  .projects-section .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-section .page-description {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .page-skills-used {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines if needed */
+    gap: 1rem; /* Space between items */
+    padding: 0; /* Removes default padding */
+    justify-content: center;
+  }
+  
+  .skill-item {
+    background-color: #582426; /* Optional: Adds a background color */
+    padding: 0.5rem 1rem; /* Adds padding to each skill */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #f3e3cb;
+  }
+  

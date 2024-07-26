@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Navbar from './components/NavBar';
+import Heroes from './components/Heroes';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import { BrowserRouter as Router } from 'react-router-dom';
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="pt-16"> {/* Adds padding to avoid content being hidden behind the navbar */}
+          <Heroes />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
+      </div>
+    </Router>
   );
 }
 
